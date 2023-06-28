@@ -1,3 +1,48 @@
-* {
-  background-color: black;
+/* Set background color for the body */
+body {
+  background-color: #e8e8e8;
+  margin-top: 3rem;
+}
+
+/* Increase font size for the leaderboard title */
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Style the recent scores container */
+.recent-scores-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  margin: 1rem;
+}
+
+/* Style the add scores container */
+.add-scores-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  margin-top: 5rem;
+}
+
+.custom-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recent-scores-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.align-right {
+  margin-right: auto;
+}
+
+.align-left {
+  margin-left: auto;
 }
