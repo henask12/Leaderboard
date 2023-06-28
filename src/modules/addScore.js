@@ -23,13 +23,11 @@ const submitScore = async (gameId, nameInput, scoreInput) => {
     try {
         const response = await fetch(`${BASE_URL}${gameId}/scores/`, requestOptions);
         if (response.ok) {
-            console.log("Score submitted successfully");
             // Reset the form and reload the page
             setTimeout(() => {
                 refreshScores();
             }, 1000);
         } else {
-            console.log("Error:", response.status);
             throw new Error("Failed to submit the score.");
         }
     } catch (error) {
@@ -39,21 +37,19 @@ const submitScore = async (gameId, nameInput, scoreInput) => {
 
 // Get the form and its input elements
 const addScoresForm = document.getElementById("add-scores-form");
-const playerNameInput = document.getElementById("name-input");
+const nameInput = document.getElementById("name-input");
 const scoreInput = document.getElementById("score-input");
 
 // Add event listener to the form submit event
 addScoresForm.addEventListener("submit", async (event) => {
-    event.preventDefault(); // Prevent form submission
-    debugger;
-    // Get the player name and score from the input elements
-    const playerName = playerNameInput.value;
+    event.preventDefault();
+
+    const name = nameInput.value;
     const score = parseInt(scoreInput.value);
 
     // Call the submitScore function with the game ID, player name, and score
-    await submitScore(GAME_ID, playerName, score);
+    await submitScore(GAME_ID, name, score);
 
-    // Clear the input fields after submission
-    playerNameInput.value = "";
+    nameInput.value = "";
     scoreInput.value = "";
 });
