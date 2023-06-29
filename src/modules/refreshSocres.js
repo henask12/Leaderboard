@@ -49,4 +49,9 @@ refreshButton.addEventListener('click', () => {
   refreshScores();
 });
 
+// Add event listener to the Refresh On Documnet load
+document.addEventListener('DOMContentLoaded', () => {
+  refreshScores();
+});
+
 export default refreshScores;
