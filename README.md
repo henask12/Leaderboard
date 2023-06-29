@@ -87,9 +87,7 @@ A **Leaderboard** List App is a web app that is designed to keep track of and up
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Currently no demo stay tunned!
-
-<!-- -   [Live Demo Link](https://google.com) -->
+ [Live Demo](https://henask12.github.io/Leaderboard/dist/index.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
