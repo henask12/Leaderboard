@@ -6,7 +6,7 @@ const { BASE_URL, GAME_ID } = constants();
 const submitScore = async (gameId, nameInput, scoreInput) => {
   const myHeaders = new Headers();
 
-  myHeaders.append('Content-Type", "application/json');
+  myHeaders.append('Content-Type', 'application/json');
 
   const body = JSON.stringify({
     user: nameInput,
